@@ -3,6 +3,11 @@
     margin: 0%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
 body {
     background-color: white;
     height: fit-content;
@@ -18,26 +23,63 @@ body {
     padding-left: auto;
     padding-right: auto;
 }
+nav {
+    display: flex;
+    flex-direction: row;
+}
+.navBar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+}
+.navBarTwo {
+    width: 100%;
+}
 header {
     height: 16rem;
     width: 130rem;
     background-image: url("/images/headerbanner.jpg");
     margin-left: -5rem;
     margin-right: -5rem;
-
-    &:before {
-        content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-            opacity: .6; 
-    }
+    padding-top: 1rem;
 }
 #headerImg {
     max-width: 100%;
     max-height: 100%;
     overflow: hidden;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+#cBtn {
+    background-color: white;
+    margin-left: 8rem;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: none;
+}
+h1 {
+    color: white;
+    margin-left: 8rem;
+}
+.heroTxt {
+    color: white;
+    margin-left: 8rem;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+.card {
+    width: 20%;
+    height: 8rem;
+    cursor: pointer;
+    border: solid 1px black;
 }
