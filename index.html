@@ -24,13 +24,24 @@
         <div class="navBar">
             <img alt="logo" src="/images/Logo.png" />
             <nav>
-                <a>Home</a>
-                <a>Blog</a>
-                <a>Contact</a>
+                <ul class="menu">
+                <li id="bold" class="navLi"><a>Home</a></li>
+                <li class="navLi"><a>Blog</a></li>
+                <li class="navLi"><a>Contact</a></li>
+            </ul>
             </nav>
         </div>
+            <div class="Navigation">
+                <label for="hamburger-menu"><i class="fas fa-bars burger"></i></label>
+                <input type="checkbox" id="hamburger-menu" />
+                <div class="NavDesktop">
+                    <a class="NavRef" href="#">Home</a>
+                    <a class="NavRef" href="#">Blog</a>
+                    <a class="NavRef" href="#">Contact</a>
+                </div>
+            </div>
         <div class="navBarTwo">
-            <button><a href="#">See latest</a></button>
+            <button id="seeLatest"><a id="btnText" href="#">See latest</a></button>
             <input id="searchBar" type="text" placeholder="Search...">
         </div>
     </div>
@@ -44,7 +55,7 @@
     <main>
         <div class="alert"></div>
     </main>
-    <div class="filler">Latest posts</div>
+    <div class="filler"><h2>Latest posts</h2></div>
     <section></section>
     <script src="/js/script.js"></script>
 </body>

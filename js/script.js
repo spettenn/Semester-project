@@ -7,9 +7,12 @@ async function getBlog() {
 
 		blogCard.forEach(function (value) {
 			document.querySelector('main').innerHTML += `
+			<img class="cardImg" src="${value.better_featured_image.media_details.sizes.medium.source_url}" />
             <div class="card">
-                    <h2>${value.slug}</h2>
-            </div>
+			<h2>${value.slug}</h2>
+					
+			</div>
+			
         `;
 		});
 	} catch (error) {
