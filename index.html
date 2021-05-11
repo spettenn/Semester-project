@@ -20,43 +20,41 @@
     <title>Homepage for blogg</title>
 </head>
 <body>
-    <div id="top">
-        <div class="navBar">
-            <img alt="logo" src="/images/Logo.png" />
-            <nav>
-                <ul class="menu">
-                <li id="bold" class="navLi"><a>Home</a></li>
-                <li class="navLi"><a>Blog</a></li>
-                <li class="navLi"><a>Contact</a></li>
+    <header class="header">
+        <img class="logoImg" src="/images/Logo.png" />
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Blogg</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
             </ul>
-            </nav>
-        </div>
-            <div class="Navigation">
-                <label for="hamburger-menu"><i class="fas fa-bars burger"></i></label>
-                <input type="checkbox" id="hamburger-menu" />
-                <div class="NavDesktop">
-                    <a class="NavRef" href="#">Home</a>
-                    <a class="NavRef" href="#">Blog</a>
-                    <a class="NavRef" href="#">Contact</a>
-                </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        <div class="navBarTwo">
-            <button id="seeLatest"><a id="btnText" href="#">See latest</a></button>
+        </nav>
             <input id="searchBar" type="text" placeholder="Search...">
-        </div>
-    </div>
-    <header>
+    </header>
+    <section class="banner">
         <h1>Want to Contribute?</h1>
         <p class="heroTxt">Help us become better and more informed</p>
         <p class="heroTxt">at writing about diverse and interesting topics</p>
         <button id="cBtn"><a href="#">Contact us</a></button> 
-    </header>
+    </section>
     <div class="filler"><h2>Populare posts</h2></div>
     <main>
         <div class="alert"></div>
     </main>
     <div class="filler"><h2>Latest posts</h2></div>
     <section></section>
+    <script src="js/dropDown.js"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>

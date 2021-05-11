@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    border-bottom: 1px solid #E2E8F0;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: row;
+    background-color: #C9D6DF;
+    overflow: hidden;
+}
+#searchBar {
+    margin-left: 4rem;
+    margin-top: 0.7rem;
+    margin-left: 8rem;
+    height: 1.8rem;
+    width: 12rem;
+    border: 1px solid gray;
+    padding: 4px;
+    box-shadow:
+            0 10px 27px rgba(1, 1, 0, 0.05);
+}
+.logoImg {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0rem;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #1E2022;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 4rem;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #1E2022;
+}
+
+.nav-link:hover{
+    color: #F0F5F9;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 3.3rem;
+        flex-direction: column;
+        background-color: #1E2022;
+        width: 100%;
+        border-radius: 5px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .header {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        }
+        #searchBar{
+            display: none;
+        }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-link{
+        color: #F0F5F9;
+    }
+    .nav-item {
+        margin: 2rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
