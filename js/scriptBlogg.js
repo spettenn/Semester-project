@@ -1,18 +1,23 @@
+const url = "http://api.skole.tech/wp-json/wp/v2/posts";
+
+const cardContainer = document.querySelector(".card")
+
+
+
 async function getBlog() {
 	try {
-		const response = await fetch('http://api.skole.tech/wp-json/wp/v2/posts');
+		const response = await fetch(url);
 		const jsonResults = await response.json();
 		const blogCard = jsonResults
 		console.log(blogCard);
 
 		blogCard.forEach(function (value) {
 			document.querySelector('main').innerHTML += `
+			<div class="card">
+			<a href="postDetail.html?id=${value.id}">
 			<img class="cardImg" src="${value.better_featured_image.media_details.sizes.medium.source_url}" />
-            <div class="card">
-			<h2>${value.slug}</h2>
-					
+			</a>
 			</div>
-			
         `;
 		});
 	} catch (error) {
