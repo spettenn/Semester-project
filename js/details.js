@@ -7,7 +7,7 @@ console.log()
 try {
 const response = await fetch('http://api.skole.tech/wp-json/wp/v2/posts/?id=' + id);
 const jsonResults = await response.json();
-const value = jsonResults.id[0];
+const value = jsonResults.id;
 
 document.title = jsonResults.slug;
 document.querySelector('main').innerHTML += `

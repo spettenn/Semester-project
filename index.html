@@ -45,18 +45,47 @@
         </nav>
             <input id="searchBar" type="text" placeholder="Search...">
     </header>
-    <section class="banner">
+    <div class="banner">
         <h1>Want to Contribute?</h1>
         <p class="heroTxt">Help us become better and more informed</p>
         <p class="heroTxt">at writing about diverse and interesting topics</p>
         <button id="cBtn"><a href="#">Contact us</a></button> 
-    </section>
+    </div>
     <div class="filler"><h2>Populare posts</h2></div>
     <main>
         <div class="alert"></div>
     </main>
     <div class="filler"><h2>Latest posts</h2></div>
-    <section></section>
+    <div id="slideCont">
+    <div id="wrapper">
+        <div id="carousel">
+            <section id="content"></section>
+        </div>
+        <button id="prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+          </svg>
+        </button>
+        <button id="next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+          </svg>
+        </button>
+      </div>
+      <div class="alert"></div>
+    </div>
     <footer>
         <div class="toTop"></div>
         <div id="footerDiv">
@@ -69,5 +98,7 @@
         <p id="pFooter">Images credit: https://unsplash.com/</p>
     </footer>
     <script src="js/dropDown.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
