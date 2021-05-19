@@ -1,0 +1,125 @@
+@import "/css/style.css";
+
+section {
+    width: 100%;
+    height: 19rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.containerOne {
+    background-color: #52616B;
+    min-width: 20rem;
+    width: 20rem;
+    height: 16rem;
+    border-radius: 8px;
+    color: #F0F5F9;
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem;
+    padding: 10px;
+}
+.contianerTwo {
+    background-color: #52616B;
+    min-width: 19rem;
+    width: 20rem;
+    height: 16rem;
+    border-radius: 8px;
+    color: #F0F5F9;
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem;
+    padding: 10px;
+}
+h3 {
+    color: #F0F5F9;
+    font-size: 1.4rem;
+}
+p {
+    color: #F0F5F9;
+    font-size: 1rem;
+}
+/*form css code */
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+.containerForm {
+    min-width: 42rem;
+    width: 42.5rem;
+    height: 30rem;
+    background-color: #52616B;
+    border-radius: 8px;
+    color: #F0F5F9;
+    display: flex;
+    flex-direction: column;
+}
+#eMail, #subject, #name {
+    height: 2rem;
+    width: 16rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    border: none;
+    padding: 3px;
+}
+#message {
+    height: 10rem;
+    width: 30rem;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+}
+#submit {
+    width: 6rem;
+    height: 2.5rem;
+    background-color: #C9D6DF;
+    color: #52616B;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-top: 1rem;
+    cursor: pointer;
+    }
+
+@media only screen and (max-width: 768px) {
+    section {
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    main {
+        padding: 0%;
+        justify-content: center;
+    }
+    .containerOne {
+        background-color: #52616B;
+        min-width: 20rem;
+        width: 20rem;
+        height: 16rem;
+        border-radius: 8px;
+        color: #F0F5F9;
+        display: flex;
+        flex-direction: column;
+        margin: 1.2rem;
+        padding: 10px;
+    }
+    .contianerTwo {
+        background-color: #52616B;
+        min-width: 19rem;
+        width: 20rem;
+        height: 16rem;
+        border-radius: 8px;
+        color: #F0F5F9;
+        display: flex;
+        flex-direction: column;
+        margin: 1.2rem;
+        padding: 10px;
+    }
+}

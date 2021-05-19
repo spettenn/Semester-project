@@ -15,9 +15,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/styleContact.css" />
+    <script
+      src="https://kit.fontawesome.com/7d8104ed11.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="contact page" content="contact page and form for blogg">
+    <title>Contact page</title>
 </head>
 <body>
-    
+    <header class="header">
+        <img class="logoImg" src="/images/Logo.png" />
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blogPost.html" class="nav-link">Blogg</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+            <input id="searchBar" type="text" placeholder="Search...">
+    </header>
+    <main>
+        <section>
+            <div class="containerOne">
+                <h3>Want to contribute?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit. Maecenas maximus lorem 
+                    in neque commodo tincidunt eget id leo. 
+                    Donec eget sagittis ipsum, 
+                    et pretium metus.Lorem ipsum dolor sit 
+                    amet, consectetur adipiscing elit. 
+                    Phasellus eu nulla ut tellus egestas 
+                    gravida. Aenean eu lacus vel purus 
+                    sodales pretium vitae et velit.</p>
+            </div>
+            <div class="contianerTwo">
+                <h3>Want to give feedback?</h3>
+                <p> Nullam efficitur dui nec auctor vestibulum. 
+                    Morbi vitae tellus rhoncus turpis 
+                    pellentesque tincidunt. Sed viverra ipsum 
+                    dapibus urna maximus, sit amet 
+                    condimentum diam auctor. Etiam velit nisi, 
+                    ullamcorper sit amet tempor sit amet, 
+                    dignissim nec arcu. Mauris consequat
+                    sem non tincidunt auctor. </p>
+            </div>
+        </section>
+            <div class="containerForm">
+                <form>
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name..">
+                    <label for="eMail">Your E-mail adress:</label>
+                    <input tyupe="text" id="eMail" name="eMail" placeholder="Your E-mail adress..">
+                    <label for="subject">Subject:</label>
+                    <input tyupe="text" id="subject" name="subject" placeholder="what is your inquiry?">
+                    <label for="message">Message:</label>
+                    <textarea tyupe="text" id="message" name="message" placeholder="specify here..."></textarea>
+                    <button id="submit">Submit..</button>
+                </form>
+            </div>
+    </main>
+    <footer>
+        <div class="toTop"></div>
+        <div id="footerDiv">
+        <i class="fab fa-twitter-square icons"></i>
+        <i class="fab fa-facebook-square icons"></i>
+        <i class="fab fa-instagram-square icons"></i>
+        <i class="fab fa-pinterest-square icons"></i>
+        </div>
+        <a id="aFooter">Contact us</a>
+        <p id="pFooter">Images credit: https://unsplash.com/</p>
+    </footer>
+    <script src="js/dropDown.js"></script>
 </body>
 </html>
