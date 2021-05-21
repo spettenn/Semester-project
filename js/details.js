@@ -24,11 +24,11 @@ async function getBlogg() {
     } = jsonResults;
     const { media_details } = better_featured_image;
 
-    document.title = title;
+    document.title = slug;
     document.querySelector("main").innerHTML += `
 <div class="content">
-    <img src="${media_details.sizes.medium.source_url}" />
-    <h2>${title}</h2>
+<h2>${title}</h2>
+<img class="detailImg" src="${media_details.sizes.medium.source_url}"
     <p>${content}</p>
 </div>
 `;
