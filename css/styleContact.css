@@ -1,162 +1,178 @@
-@import "/css/style.css";
+@import "/css/styleBlogg.css";
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 .header {
-    height: 3rem;
+  height: 3rem;
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
-section {
-    width: 100%;
-    height: 19rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 body {
-    height: 60rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-top: 0%;
+  padding-bottom: 0%;
 }
-main{
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;
-    margin: auto;
-    padding-left: 0%;
-    padding-right: 0%;
+main {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  height: 50rem;
+  margin: 0%;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  justify-content: center;
 }
 .containerOne {
-    background-color: #52616B;
+  background-color: #52616b;
+  min-width: 20rem;
+  width: 20rem;
+  height: 16rem;
+  border-radius: 8px;
+  color: #f0f5f9;
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem;
+  padding: 10px;
+}
+.contianerTwo {
+  background-color: #52616b;
+  min-width: 19rem;
+  width: 20rem;
+  height: 16rem;
+  border-radius: 8px;
+  color: #f0f5f9;
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem;
+  padding: 10px;
+}
+#responsiveContainer {
+  display: none;
+}
+h3 {
+  color: #f0f5f9;
+  font-size: 1.4rem;
+}
+p {
+  color: #f0f5f9;
+  font-size: 1rem;
+}
+/*form css code */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+#error_message {
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 1s ease;
+}
+.containerForm {
+  min-width: 42rem;
+  width: 42.5rem;
+  height: 31rem;
+  background-color: #52616b;
+  border-radius: 8px;
+  color: #f0f5f9;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+#email,
+#subject,
+#name {
+  height: 2rem;
+  width: 16rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  border: none;
+  padding: 3px;
+}
+#message {
+  height: 10rem;
+  width: 30rem;
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+}
+.btn input[type="submit"] {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #c9d6df;
+  color: #52616b;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    height: 80rem;
+  }
+  section {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .contianerTwo {
+    display: none;
+  }
+  .containerOne {
+    display: none;
+  }
+  #responsiveContainer {
+    background-color: #52616b;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 8px;
+    color: #f0f5f9;
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem;
+    padding: 10px;
+  }
+  main {
+    padding: 0%;
+  }
+  .containerOne {
+    background-color: #52616b;
     min-width: 20rem;
     width: 20rem;
     height: 16rem;
     border-radius: 8px;
-    color: #F0F5F9;
+    color: #f0f5f9;
     display: flex;
     flex-direction: column;
     margin: 1.2rem;
     padding: 10px;
-}
-.contianerTwo {
-    background-color: #52616B;
+  }
+  .contianerTwo {
+    background-color: #52616b;
     min-width: 19rem;
     width: 20rem;
     height: 16rem;
     border-radius: 8px;
-    color: #F0F5F9;
+    color: #f0f5f9;
     display: flex;
     flex-direction: column;
     margin: 1.2rem;
     padding: 10px;
-}
-#responsiveContainer {
-    display: none;
-}
-h3 {
-    color: #F0F5F9;
-    font-size: 1.4rem;
-}
-p {
-    color: #F0F5F9;
-    font-size: 1rem;
-}
-/*form css code */
-form {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-
-}
-.containerForm {
-    min-width: 42rem;
-    width: 42.5rem;
-    height: 30rem;
-    background-color: #52616B;
-    border-radius: 8px;
-    color: #F0F5F9;
-    display: flex;
-    flex-direction: column;
-}
-#eMail, #subject, #name {
-    height: 2rem;
-    width: 16rem;
-    margin-bottom: 1rem;
-    border-radius: 3px;
-    border: none;
-    padding: 3px;
-}
-#message {
-    height: 10rem;
-    width: 30rem;
-    border-radius: 3px;
-    border: none;
-    padding: 5px;
-}
-#submit {
-    width: 6rem;
-    height: 2.5rem;
-    background-color: #C9D6DF;
-    color: #52616B;
-    border: 1px solid gray;
-    border-radius: 3px;
-    margin-top: 1rem;
-    cursor: pointer;
-    }
-
-@media only screen and (max-width: 768px) {
-    body {
-        height: 80rem;
-    }
-    section {
-        width: 100%;
-        height: 30rem;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-    .contianerTwo {
-        display: none;
-    }
-    .containerOne{
-        display: none;
-    }
-    #responsiveContainer {
-    background-color: #52616B;
-    width: 20rem;
-    height: 25rem;
-    border-radius: 8px;
-    color: #F0F5F9;
-    display: flex;
-    flex-direction: column;
-    margin: 1.2rem;
-    padding: 10px;
-    }
-    main {
-        padding: 0%;
-        
-    }
-    .containerOne {
-        background-color: #52616B;
-        min-width: 20rem;
-        width: 20rem;
-        height: 16rem;
-        border-radius: 8px;
-        color: #F0F5F9;
-        display: flex;
-        flex-direction: column;
-        margin: 1.2rem;
-        padding: 10px;
-    }
-    .contianerTwo {
-        background-color: #52616B;
-        min-width: 19rem;
-        width: 20rem;
-        height: 16rem;
-        border-radius: 8px;
-        color: #F0F5F9;
-        display: flex;
-        flex-direction: column;
-        margin: 1.2rem;
-        padding: 10px;
-    }
+  }
 }
