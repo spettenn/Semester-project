@@ -6,7 +6,7 @@ async function getBlogg() {
 
   try {
     const response = await fetch(
-      `http://api.skole.tech/wp-json/wp/v2/posts/${id}`,
+      `https://noroffcors.herokuapp.com/https://api.skole.tech/wp-json/wp/v2/posts/${id}`,
       {
         method: "GET",
         headers: {

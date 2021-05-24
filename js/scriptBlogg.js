@@ -1,6 +1,6 @@
 
 
-const url = "http://api.skole.tech/wp-json/wp/v2/posts";
+const url = "https://noroffcors.herokuapp.com/https://api.skole.tech/wp-json/wp/v2/posts";
 
 const cardContainer = document.querySelector(".card")
 
