@@ -15,7 +15,9 @@ h2 {
 }
 p {
   line-height: 1.5rem;
+  max-width: 800px;
 }
+
 .content {
   overflow: hidden;
 }
