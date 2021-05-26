@@ -26,21 +26,3 @@ async function getBlog() {
 }
 
 getBlog();
-var button = document.querySelector('.toggle-button');
-
-button.addEventListener('click', function (event) {
-  let hiddenItems = Array.prototype.slice.call(document.querySelectorAll('.hideable'));
-  
-  let showing = button.textContent === "Show more items";
-
-  hiddenItems.forEach(function(item){
-    if(!showing){
-      // If we are hiding, then add the .hidden-item class
-      item.classList.add("hidden-item");
-    } else {
-      // Otherwise remove the .hidden-item class
-      item.classList.remove("hidden-item");
-    }
-    button.textContent = button.textContent === "Show more items" ? "Hide items" : "Show more items";
-  });
-});
