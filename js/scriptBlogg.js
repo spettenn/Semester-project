@@ -11,9 +11,9 @@ async function getBlog() {
 		const blogCard = jsonResults
 		console.log(blogCard);
 
-		blogCard.forEach(function (value) {
+		blogCard.forEach(function (value,index) {
 			document.querySelector('main').innerHTML += `
-			<div class="card">
+			<div class="card" style="display: ${index>=6 ? "none" : "flex"}">
 			<a href="postDetail.html?id=${value.id}">
 			<img class="cardImg" src="${value.better_featured_image.media_details.sizes.medium.source_url}" />
 			<h4 class="cardTitle">${value.title.rendered}</h4>

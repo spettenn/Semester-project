@@ -6,7 +6,7 @@ function validate() {
   const error_message = document.getElementById("error_message");
 
   var text;
-  if (name.length < 5) {
+  if (name.length <= 5) {
     text = "Please enter a name";
     error_message.innerHTML = text;
     return farlse;

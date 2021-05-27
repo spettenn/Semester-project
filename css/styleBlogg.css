@@ -25,11 +25,14 @@ main {
   border: 1px solid black;
   overflow: hidden;
 }
+
 .cardTitle {
   text-align: center;
+  color: black;
 }
 .card:hover {
   box-shadow: 0px 8px 9px rgba(black, 0.4);
+  opacity: 80%;
   transition: 0.3s ease-out;
   background-color: #1e2022;
   color: white;

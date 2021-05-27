@@ -344,7 +344,7 @@ h3 {
 /* Foooter style */
 #footer {
   position: relative;
-
+  margin-top: 1rem;
   width: 100%;
   height: 7rem;
   background-color: #c9d6df;
