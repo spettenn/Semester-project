@@ -8,6 +8,7 @@
   width: 18rem;
 }
 main {
+  height: fit-content;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -25,7 +26,16 @@ main {
   border: 1px solid black;
   overflow: hidden;
 }
-
+#buttonShow {
+  height: 2rem;
+  width: 5rem;
+  background-color: #1e2022;
+  color: #c9d6df;
+  border-radius: 5px;
+  border: solid #c9d6df 1px;
+  font-weight: bold;
+  cursor: pointer;
+}
 .cardTitle {
   text-align: center;
   color: black;

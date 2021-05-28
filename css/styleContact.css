@@ -22,7 +22,8 @@ body {
 main {
   display: flex;
   flex-direction: row;
-  max-width: 1400px;
+  min-width: 1800px;
+  max-width: 1800px;
   height: 50rem;
   margin: 0%;
   padding-left: 10rem;
@@ -40,6 +41,7 @@ main {
   border-radius: 8px;
   margin-top: 1rem;
   justify-content: space-between;
+  box-shadow: grey 0px 1px 1px 1px;
 }
 p {
   margin: 5px;
@@ -61,6 +63,7 @@ form {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  border-radius: 8px;
 }
 #error_message {
   margin-bottom: 20px;
@@ -138,7 +141,7 @@ form {
     padding: 10px;
   }
   main {
-    height: 60rem;
+    height: fit-content;
     padding-left: 2px;
     padding-right: 2px;
   }
@@ -175,6 +178,6 @@ form {
 }
 @media only screen and (max-width: 620px) {
   main {
-    height: 65rem;
+    height: fit-content;
   }
 }
