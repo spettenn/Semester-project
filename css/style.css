@@ -483,7 +483,10 @@ h3 {
     transform: translateY(-8px) rotate(-45deg);
   }
   #wrapper {
-    width: 10rem;
+    width: 12rem;
+  }
+  .item {
+    width: 12rem;
   }
 }
 @media only screen and (max-width: 620px) {
