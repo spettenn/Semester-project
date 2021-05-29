@@ -16,7 +16,7 @@ a {
 }
 body {
   background-color: white;
-  height: 100%;
+  height: fit-content;
   width: 100%;
   position: absolute;
   overflow-x: hidden;
@@ -116,7 +116,7 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 1rem;
-  z-index: -1;
+  z-index: 5;
   display: flex;
   flex-direction: column;
 }
@@ -368,10 +368,12 @@ h3 {
 #aFooter {
   text-align: center;
   color: #1e2022;
+  font-size: 22px;
 }
 #pFooter {
   text-align: center;
   color: #1e2022;
+  font-size: 22px;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -467,6 +469,9 @@ h3 {
     position: fixed;
     z-index: 15;
   }
+  .banner {
+    padding-top: 3.5rem;
+  }
   #searchBar {
     display: none;
   }
@@ -557,6 +562,6 @@ h3 {
     height: 11rem;
   }
   .imgMedium {
-    width: 22rem;
+    width: fit-content;
   }
 }

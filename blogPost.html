@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styleBlogg.css" />
+    <script
+      src="https://kit.fontawesome.com/7d8104ed11.js"
+      crossorigin="anonymous"
+    ></script>
     <meta name="page for bloggs" content="dislpaying all blogg content" />
     <title>Collection of bloggs</title>
   </head>
@@ -35,23 +39,38 @@
     <div class="filler"><h2>Latest posts</h2></div>
     <main>
       <div class="alert"></div>
-      <button onclick="onClick()" id="buttonShow">Show more</button>
     </main>
+
+    <div class="filler">
+      <a onclick="buttonClick(this)" id="buttonShow">Show more</a>
+    </div>
     <div class="filler"></div>
     <section></section>
+    <footer id="footer">
+      <div id="footerDiv">
+        <i class="fab fa-twitter-square icons fa-2x"></i>
+        <i class="fab fa-facebook-square icons fa-2x"></i>
+        <i class="fab fa-instagram-square icons fa-2x"></i>
+        <i class="fab fa-pinterest-square icons fa-2x"></i>
+      </div>
+      <a id="aFooter">Contact us</a>
+      <p id="pFooter">Images credit: https://unsplash.com/</p>
+      <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function () {
+          var mf = document.createElement("script");
+          mf.type = "text/javascript";
+          mf.defer = true;
+          mf.src =
+            "//cdn.mouseflow.com/projects/56d08a74-a3b6-4aef-bfbc-f23181945249.js";
+          document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+      </script>
+    </footer>
     <script src="js/dropDown.js"></script>
     <script src="/js/scriptBlogg.js"></script>
     <script src="js/showBtn.js"></script>
-    <script type="text/javascript">
-      window._mfq = window._mfq || [];
-      (function () {
-        var mf = document.createElement("script");
-        mf.type = "text/javascript";
-        mf.defer = true;
-        mf.src =
-          "//cdn.mouseflow.com/projects/56d08a74-a3b6-4aef-bfbc-f23181945249.js";
-        document.getElementsByTagName("head")[0].appendChild(mf);
-      })();
-    </script>
+    <script src="/js/showBtnTwo.js"></script>
+    <script src="/js/scriptBloggTwo.js"></script>
   </body>
 </html>
