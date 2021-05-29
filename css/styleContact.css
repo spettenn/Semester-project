@@ -24,12 +24,11 @@ main {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  max-width: 1600px;
+  max-width: 1500px;
   margin: 0%;
   padding-left: 10rem;
   padding-right: 10rem;
   justify-content: center;
-  justify-content: space-between;
 }
 .container {
   width: 42.5rem;

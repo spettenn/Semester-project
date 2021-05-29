@@ -49,6 +49,7 @@ li {
 .logoImg {
   margin-top: 5px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 .navbar {
   display: flex;
@@ -522,8 +523,12 @@ h3 {
     padding: 0%;
     width: 100%;
   }
+  .header {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
   .banner {
-    height: 18rem;
+    height: 22rem;
   }
   .span {
     height: 15rem;
@@ -563,5 +568,11 @@ h3 {
   }
   .imgMedium {
     width: fit-content;
+  }
+  #next {
+    right: -4rem;
+  }
+  #prev {
+    left: -4rem;
   }
 }
