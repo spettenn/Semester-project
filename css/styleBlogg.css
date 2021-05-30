@@ -12,12 +12,14 @@ main {
   justify-content: center;
   padding-left: 5rem;
   padding-right: 5rem;
+  min-height: 40rem;
 }
 .cardImg {
   height: 14rem;
   width: 18rem;
   border-bottom: 1px solid black;
 }
+
 .card {
   height: 16rem;
   width: 18rem;
@@ -95,11 +97,14 @@ main {
   main {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    padding-top: 1rem;
+    padding-top: 3rem;
   }
   .section {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+  #top {
+    padding-top: 3rem;
   }
 }
 @media only screen and (max-width: 650px) {

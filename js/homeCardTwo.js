@@ -13,7 +13,7 @@ async function getPostTwo() {
             <h3>${jsonResultsTwo.title.rendered}</h3>
             </div>
             <div>
-			<img class="imgMedium" src="${jsonResultsTwo.better_featured_image.media_details.sizes.medium_large.source_url}" />
+			<img alt="${jsonResultsTwo.better_featured_image.alt_text}" class="imgMedium" src="${jsonResultsTwo.better_featured_image.media_details.sizes.medium_large.source_url}" />
 			</div>
             </a>
 			</div>

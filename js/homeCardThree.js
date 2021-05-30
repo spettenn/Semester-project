@@ -13,7 +13,7 @@ async function getPostThree() {
             <h3>${jsonResultsThree.title.rendered}</h3>
             </div>
             <div>
-			<img class="imgMedium" src="${jsonResultsThree.better_featured_image.media_details.sizes.medium_large.source_url}" />
+			<img alt="${jsonResultsThree.better_featured_image.alt_text}" class="imgMedium" src="${jsonResultsThree.better_featured_image.media_details.sizes.medium_large.source_url}" />
 			</div>
             </a>
 			</div>

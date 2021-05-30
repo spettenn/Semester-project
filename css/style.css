@@ -21,6 +21,12 @@ body {
   position: absolute;
   overflow-x: hidden;
 }
+@font-face {
+  font-family: "Trajan";
+  src: url(fonts/TrajanPro-Regular.woff);
+  font-style: normal;
+  font-weight: 100;
+}
 /* navigation bar */
 li {
   list-style: none;
@@ -144,7 +150,8 @@ li {
 h1 {
   color: white;
   margin-left: 15rem;
-  font-family: ;
+  font-family: Trajan;
+  font-size: 2.5rem;
 }
 .heroTxt {
   color: white;
@@ -158,6 +165,11 @@ h1 {
   margin-top: 0.3rem;
   text-align: center;
   position: relative;
+}
+h2 {
+  font-family: Trajan;
+  font-weight: 200;
+  font-size: 2rem;
 }
 .fail {
   display: none;
@@ -383,6 +395,9 @@ h3 {
     padding-left: 0%;
     padding-right: 0%;
   }
+  h1 {
+    font-size: 2rem;
+  }
   .header {
     width: 100%;
     border-bottom: 1px solid #e2e8f0;
@@ -417,6 +432,10 @@ h3 {
     height: 55rem;
     padding-left: 0rem;
     padding-right: 0rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
   .pageDef {
     display: flex;
@@ -574,9 +593,9 @@ h3 {
     width: fit-content;
   }
   #next {
-    right: -4rem;
+    right: -3rem;
   }
   #prev {
-    left: -4rem;
+    left: -3rem;
   }
 }

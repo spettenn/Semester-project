@@ -10,7 +10,7 @@ async function getPostFour() {
 			<div class="cardSpan">
             <a class="" href="postDetail.html?id=${jsonResultsFour.id}">
             <div>
-			<img class="imgSpan" src="${jsonResultsFour.better_featured_image.media_details.sizes.medium_large.source_url}" />
+			<img alt="${jsonResultsFour.better_featured_image.alt_text}" class="imgSpan" src="${jsonResultsFour.better_featured_image.media_details.sizes.medium_large.source_url}" />
 			</div>
             <div>
             <h3 class="largeDesc">${jsonResultsFour.title.rendered}</h3>

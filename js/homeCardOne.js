@@ -13,7 +13,7 @@ async function getPost() {
     document.querySelector(".cardContainerOne").innerHTML += `
 			<div class="cardOne">
             <a href="postDetail.html?id=${jsonResults.id}">
-			<img class="imgLarge" src="${jsonResults.better_featured_image.media_details.sizes.medium_large.source_url}"/>
+			<img alt="${jsonResults.better_featured_image.alt_text}" class="imgLarge" src="${jsonResults.better_featured_image.media_details.sizes.medium_large.source_url}"/>
 			<h4 class="cardTitle">${title}</h4>
 			</a>
 			</div>
