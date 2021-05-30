@@ -298,7 +298,8 @@ h3 {
   size: cover;
 }
 
-/* slider CSS taken from: */
+/* slider */
+/* report ref: 2 for source*/
 #slideCont {
   display: flex;
   justify-content: center;
@@ -510,6 +511,8 @@ h3 {
   #cBtn {
     margin-left: 1rem;
   }
+  /*Nav dropdown*/
+  /* report ref: 1 for source */
   .nav-menu.active {
     left: 0;
   }

@@ -75,6 +75,7 @@ br {
   border: #1e2022;
 }
 /* CSS for modal Img */
+/* report ref: 3 for source */
 .modal {
   z-index: 1;
   display: none;
