@@ -41,6 +41,19 @@
       <input id="searchBar" type="text" placeholder="Search..." />
     </header>
     <main></main>
+    <div id="modal01" class="modal" onclick="this.style.display='none'">
+      <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <div class="modal-content">
+        <img id="img01" style="max-width: 100%" />
+      </div>
+    </div>
+    <div class="filler">
+      <a
+        href="https://unruffled-wescoff-562d65.netlify.app/blogpost"
+        id="return"
+        >Return to blogg</a
+      >
+    </div>
     <footer id="footer">
       <div id="footerDiv">
         <i class="fab fa-twitter-square icons fa-2x"></i>
@@ -48,7 +61,11 @@
         <i class="fab fa-instagram-square icons fa-2x"></i>
         <i class="fab fa-pinterest-square icons fa-2x"></i>
       </div>
-      <a id="aFooter">Contact us</a>
+      <a
+        href="https://unruffled-wescoff-562d65.netlify.app/contact.html"
+        id="aFooter"
+        >Contact us</a
+      >
       <p id="pFooter">Images credit: https://unsplash.com/</p>
       <script type="text/javascript">
         window._mfq = window._mfq || [];
@@ -64,5 +81,6 @@
     </footer>
     <script src="./js/details.js"></script>
     <script src="js/dropDown.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

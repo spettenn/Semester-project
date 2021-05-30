@@ -27,9 +27,11 @@ async function getBlogg() {
     document.title = slug;
     document.querySelector("main").innerHTML += `
 <div class="content">
-<h2>${title}</h2>
-<img class="detailImg" src="${media_details.sizes.medium.source_url}"
-    <p>${content}</p>
+<h2>${title}</h2>¨
+<div class="container1">
+<img class="detailImg modal-hover-opacity" onclick="onClick(this)" src="${media_details.sizes.medium.source_url}"
+</div>    
+<p>${content}</p>
 </div>
 `;
   } catch (error) {
