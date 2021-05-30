@@ -116,13 +116,13 @@ li {
 
 /* header / Hero img */
 .banner {
-  height: 16rem;
+  height: 20rem;
   width: 100%;
   background-image: url("/images/headerImgDarkened.jpg");
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 1rem;
+  padding-top: 3rem;
   z-index: 5;
   display: flex;
   flex-direction: column;
@@ -146,6 +146,11 @@ li {
   border: none;
   cursor: pointer;
   z-index: 10;
+}
+#cBtn:hover {
+  background-color: #1e2022;
+  color: #c9d6df;
+  border: 1px solid #c9d6df;
 }
 h1 {
   color: white;

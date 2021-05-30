@@ -69,9 +69,10 @@ main {
   padding: 10px;
 }
 #buttonShow:hover {
-  color: #c9d6df;
-  background-color: #1e2022;
+  color: #1e2022;
+  background-color: #c9d6df;
   transform: 0.3s;
+  border: 1px solid #1e2022;
 }
 #cardTitle {
   text-align: center;
